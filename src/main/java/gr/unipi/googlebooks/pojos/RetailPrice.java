@@ -32,4 +32,12 @@ public class RetailPrice {
         this.currencyCode = currencyCode;
     }
 
+    @Override
+    public String toString() {
+        return "RetailPrice{" +
+                "amountInMicros=" + amountInMicros +
+                ", amount=" + amount +
+                ", currencyCode='" + currencyCode + '\'' +
+                '}';
+    }
 }

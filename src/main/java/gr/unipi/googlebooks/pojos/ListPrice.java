@@ -32,4 +32,13 @@ public class ListPrice {
         this.currencyCode = currencyCode;
     }
 
+
+    @Override
+    public String toString() {
+        return "ListPrice{" +
+                "amountInMicros=" + amountInMicros +
+                ", amount=" + amount +
+                ", currencyCode='" + currencyCode + '\'' +
+                '}';
+    }
 }

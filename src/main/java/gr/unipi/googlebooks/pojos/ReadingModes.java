@@ -23,4 +23,11 @@ public class ReadingModes {
         this.image = image;
     }
 
+    @Override
+    public String toString() {
+        return "ReadingModes{" +
+                "text=" + text +
+                ", image=" + image +
+                '}';
+    }
 }

@@ -23,4 +23,11 @@ public class PanelizationSummary {
         this.containsImageBubbles = containsImageBubbles;
     }
 
+    @Override
+    public String toString() {
+        return "PanelizationSummary{" +
+                "containsEpubBubbles=" + containsEpubBubbles +
+                ", containsImageBubbles=" + containsImageBubbles +
+                '}';
+    }
 }

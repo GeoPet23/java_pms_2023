@@ -5,7 +5,7 @@ public enum PrintType {
     BOOKS("books"),
     MAGAZINES("magazines");
 
-    private String value;
+    private final String value;
 
     PrintType(String value) {
         this.value = value;

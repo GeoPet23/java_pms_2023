@@ -14,4 +14,10 @@ public class SearchInfo {
         this.textSnippet = textSnippet;
     }
 
+    @Override
+    public String toString() {
+        return "SearchInfo{" +
+                "textSnippet='" + textSnippet + '\'' +
+                '}';
+    }
 }

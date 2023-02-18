@@ -95,4 +95,20 @@ public class AccessInfo {
         this.quoteSharingAllowed = quoteSharingAllowed;
     }
 
+    @Override
+    public String toString() {
+        return "AccessInfo{" +
+                "country='" + country + '\'' +
+                ", viewability='" + viewability + '\'' +
+                ", embeddable=" + embeddable +
+                ", publicDomain=" + publicDomain +
+                ", textToSpeechPermission='" + textToSpeechPermission + '\'' +
+                ", epub=" + epub +
+                ", pdf=" + pdf +
+                ", webReaderLink='" + webReaderLink + '\'' +
+                ", accessViewStatus='" + accessViewStatus + '\'' +
+                ", quoteSharingAllowed=" + quoteSharingAllowed +
+                '}';
+    }
+
 }

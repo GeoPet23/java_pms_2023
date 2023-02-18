@@ -7,7 +7,7 @@ public enum Filter {
     PAID_EBOOKS("paid-ebooks"),
     EBOOKS("ebooks");
 
-    private String value;
+    private final String value;
 
     Filter(String value) {
         this.value = value;

@@ -32,4 +32,13 @@ public class Pdf {
         this.downloadLink = downloadLink;
     }
 
+
+    @Override
+    public String toString() {
+        return "Pdf{" +
+                "isAvailable=" + isAvailable +
+                ", acsTokenLink='" + acsTokenLink + '\'' +
+                ", downloadLink='" + downloadLink + '\'' +
+                '}';
+    }
 }

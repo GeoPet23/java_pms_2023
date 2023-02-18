@@ -69,4 +69,16 @@ public class SaleInfo {
         this.offers = offers;
     }
 
+    @Override
+    public String toString() {
+        return "SaleInfo{" +
+                "country='" + country + '\'' +
+                ", saleability='" + saleability + '\'' +
+                ", isEbook=" + isEbook +
+                ", listPrice=" + listPrice +
+                ", retailPrice=" + retailPrice +
+                ", buyLink='" + buyLink + '\'' +
+                ", offers=" + offers +
+                '}';
+    }
 }

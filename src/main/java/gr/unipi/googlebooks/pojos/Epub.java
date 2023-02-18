@@ -32,4 +32,12 @@ public class Epub {
         this.downloadLink = downloadLink;
     }
 
+    @Override
+    public String toString() {
+        return "Epub{" +
+                "isAvailable=" + isAvailable +
+                ", acsTokenLink='" + acsTokenLink + '\'' +
+                ", downloadLink='" + downloadLink + '\'' +
+                '}';
+    }
 }

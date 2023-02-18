@@ -23,4 +23,11 @@ public class IndustryIdentifier {
         this.identifier = identifier;
     }
 
+    @Override
+    public String toString() {
+        return "IndustryIdentifier{" +
+                "type='" + type + '\'' +
+                ", identifier='" + identifier + '\'' +
+                '}';
+    }
 }

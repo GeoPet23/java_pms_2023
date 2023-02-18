@@ -1,11 +1,12 @@
 package gr.unipi.googlebooks.search.enums;
 
-public enum Download {
-    EPUB("epub");
+public enum Access {
+    PUBLIC("PUBLIC"),
+    PRIVATE("books");
 
     private final String value;
 
-    Download(String value) {
+    Access(String value) {
         this.value = value;
     }
 
@@ -13,8 +14,8 @@ public enum Download {
         return this.value;
     }
 
-    public static Download fromString(String value) {
-        for (Download b : Download.values()) {
+    public static Access fromString(String value) {
+        for (Access b : Access.values()) {
             if (b.value.equalsIgnoreCase(value)) {
                 return b;
             }

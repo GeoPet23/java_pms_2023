@@ -204,4 +204,31 @@ public class VolumeInfo {
         this.ratingsCount = ratingsCount;
     }
 
+    @Override
+    public String toString() {
+        return "VolumeInfo{" +
+                "title='" + title + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", authors=" + authors +
+                ", publishedDate='" + publishedDate + '\'' +
+                ", description='" + description + '\'' +
+                ", industryIdentifiers=" + industryIdentifiers +
+                ", readingModes=" + readingModes +
+                ", pageCount=" + pageCount +
+                ", printType='" + printType + '\'' +
+                ", categories=" + categories +
+                ", maturityRating='" + maturityRating + '\'' +
+                ", allowAnonLogging=" + allowAnonLogging +
+                ", contentVersion='" + contentVersion + '\'' +
+                ", panelizationSummary=" + panelizationSummary +
+                ", imageLinks=" + imageLinks +
+                ", language='" + language + '\'' +
+                ", previewLink='" + previewLink + '\'' +
+                ", infoLink='" + infoLink + '\'' +
+                ", canonicalVolumeLink='" + canonicalVolumeLink + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", averageRating=" + averageRating +
+                ", ratingsCount=" + ratingsCount +
+                '}';
+    }
 }

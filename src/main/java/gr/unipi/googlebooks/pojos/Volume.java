@@ -1,13 +1,19 @@
 
 package gr.unipi.googlebooks.pojos;
 
-import java.util.List;
-
+/**
+ * Base on https://developers.google.com/books/docs/v1/reference/volumes
+ * */
 public class Volume {
 
     private String kind;
-    private long totalItems;
-    private List<Item> items;
+    private String id;
+    private String etag;
+    private String selfLink;
+    private VolumeInfo volumeInfo;
+    private SaleInfo saleInfo;
+    private AccessInfo accessInfo;
+    private SearchInfo searchInfo;
 
     public String getKind() {
         return kind;
@@ -17,20 +23,73 @@ public class Volume {
         this.kind = kind;
     }
 
-    public long getTotalItems() {
-        return totalItems;
+    public String getId() {
+        return id;
     }
 
-    public void setTotalItems(long totalItems) {
-        this.totalItems = totalItems;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public List<Item> getItems() {
-        return items;
+    public String getEtag() {
+        return etag;
     }
 
-    public void setItems(List<Item> items) {
-        this.items = items;
+    public void setEtag(String etag) {
+        this.etag = etag;
     }
 
+    public String getSelfLink() {
+        return selfLink;
+    }
+
+    public void setSelfLink(String selfLink) {
+        this.selfLink = selfLink;
+    }
+
+    public VolumeInfo getVolumeInfo() {
+        return volumeInfo;
+    }
+
+    public void setVolumeInfo(VolumeInfo volumeInfo) {
+        this.volumeInfo = volumeInfo;
+    }
+
+    public SaleInfo getSaleInfo() {
+        return saleInfo;
+    }
+
+    public void setSaleInfo(SaleInfo saleInfo) {
+        this.saleInfo = saleInfo;
+    }
+
+    public AccessInfo getAccessInfo() {
+        return accessInfo;
+    }
+
+    public void setAccessInfo(AccessInfo accessInfo) {
+        this.accessInfo = accessInfo;
+    }
+
+    public SearchInfo getSearchInfo() {
+        return searchInfo;
+    }
+
+    public void setSearchInfo(SearchInfo searchInfo) {
+        this.searchInfo = searchInfo;
+    }
+
+    @Override
+    public String toString() {
+        return "Volume{" +
+                "kind='" + kind + '\'' +
+                ", id='" + id + '\'' +
+                ", etag='" + etag + '\'' +
+                ", selfLink='" + selfLink + '\'' +
+                ", volumeInfo=" + volumeInfo +
+                ", saleInfo=" + saleInfo +
+                ", accessInfo=" + accessInfo +
+                ", searchInfo=" + searchInfo +
+                '}';
+    }
 }

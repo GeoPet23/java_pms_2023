@@ -32,4 +32,12 @@ public class Offer {
         this.retailPrice = retailPrice;
     }
 
+    @Override
+    public String toString() {
+        return "Offer{" +
+                "finskyOfferType=" + finskyOfferType +
+                ", listPrice=" + listPrice +
+                ", retailPrice=" + retailPrice +
+                '}';
+    }
 }
