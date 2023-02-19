@@ -25,4 +25,12 @@ public enum Filter {
         }
         return null;
     }
+
+    public static Filter fromInt(int value) {
+        try {
+            return Filter.values()[value];
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }

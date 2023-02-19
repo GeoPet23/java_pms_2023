@@ -14,16 +14,29 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Service singleton class that communicates with Google Books API in order to retrieve the corresponded
+ * information.
+ * */
 public class GoogleAPI {
 
     private String apiKey;
     private String apiURL;
     private HttpUtils httpUtils;
 
-    public GoogleAPI() throws IOException {
+    private static GoogleAPI instance;
+
+    private GoogleAPI() throws IOException {
         this.apiKey = Properties.getApiKey();
         this.apiURL = Properties.getApiURL();
         this.httpUtils = HttpUtils.getInstance();
+    }
+
+    public static GoogleAPI getInstance() throws IOException {
+        if(instance == null) {
+            instance = new GoogleAPI();
+        }
+        return instance;
     }
 
     public Volumes searchVolumes(String q, Download download, Filter filter, PrintType printType) {

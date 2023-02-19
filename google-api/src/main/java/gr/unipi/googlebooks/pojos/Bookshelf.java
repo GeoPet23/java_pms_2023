@@ -9,14 +9,14 @@ import java.util.Date;
  * Base on https://developers.google.com/books/docs/v1/reference/bookshelves#resource
  * */
 public class Bookshelf {
-    public String kind;
-    public int id;
-    public String title;
-    public Access access;
-    public Date updated;
-    public Date created;
-    public int volumeCount;
-    public Date volumesLastUpdated;
+    private String kind;
+    private int id;
+    private String title;
+    private Access access;
+    private Date updated;
+    private Date created;
+    private int volumeCount;
+    private Date volumesLastUpdated;
 
     public String getKind() {
         return kind;

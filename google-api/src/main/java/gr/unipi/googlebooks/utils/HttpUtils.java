@@ -5,6 +5,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;
 
+/**
+ * Utilities singleton class in order to create GET requests with parameters
+ * */
 public class HttpUtils {
     RestTemplate restTemplate;
     private static HttpUtils instance;
